@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card-header h2 button {
+    width: 100%;
+    text-align: left;
+}
+
+.card-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-body ul li {
+    padding: 5px 0;
+}
+
+footer {
+    padding: 20px 0;
+    background: #f8f9fa;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container article {
+    margin-bottom: 20px;
+}
+
+.container article h3 {
+    margin-bottom: 10px;
+}
+
+.container article p {
+    margin-bottom: 10px;
+}
+
+.container article a {
+    margin-top: 10px;
+}
+
+.container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
