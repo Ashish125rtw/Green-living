@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Green Living</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Calculator Section -->
+    <div class="container mt-4">
+        <h2>Carbon Footprint Calculator</h2>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="electricity">Electricity Usage (kWh/month):</label>
+                <input type="number" class="form-control" id="electricity" required>
+            </div>
+            <div class="form-group">
+                <label for="gas">Natural Gas Usage (therms/month):</label>
+                <input type="number" class="form-control" id="gas" required>
+            </div>
+            <div class="form-group">
+                <label for="fuel">Fuel Usage (gallons/month):</label>
+                <input type="number" class="form-control" id="fuel" required>
+            </div>
+            <div class="form-group">
+                <label for="miles">Miles Driven (miles/month):</label>
+                <input type="number" class="form-control" id="miles" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+  <!-- Footer -->
+ <br>
+ <footer class="bg-light text-center text-lg-start mt-4">
+     <div class="container p-4 pb-0">
+         <div class="row">
+             <div class="col-md-12 mb-4 mb-md-0 text-center">
+                 <p>India </p>
+                 <br>
+                 <a href="https://www.linkedin.com" target="_blank" class="mx-2">
+                     <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
+                 </a>
+                 <a href="https://www.instagram.com" target="_blank" class="mx-2">
+                     <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram">
+                 </a>
+                 <a href="https://www.twitter.com" target="_blank" class="mx-2">
+                     <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter">
+                 </a>
+                 <a href="https://www.facebook.com" target="_blank" class="mx-2">
+                     <img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook">
+                 </a>
+             </div>
+         </div>
+         <hr class="my-4">
+         <div class="row">
+             <div class="col-md-12 text-center">
+                 <p>&copy; 2024 Greenly, all rights reserved.</p>
+                 
+                 <a href="#" class="mx-2">Language & region: English , Globally</a>
+                 <p>Site built with teamwork by :🤝 <strong> LDCE Ninjas</strong>.</p>
+             </div>
+         </div>
+     </div>
+ </footer>
+ 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('calculatorForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const electricity = parseFloat(document.getElementById('electricity').value);
+            const gas = parseFloat(document.getElementById('gas').value);
+            const fuel = parseFloat(document.getElementById('fuel').value);
+            const miles = parseFloat(document.getElementById('miles').value);
+
+            const electricityFootprint = electricity * 0.92; // Example emission factor
+            const gasFootprint = gas * 5.3; // Example emission factor
+            const fuelFootprint = fuel * 19.6; // Example emission factor
+            const milesFootprint = miles * 0.79; // Example emission factor
+
+            const totalFootprint = electricityFootprint + gasFootprint + fuelFootprint + milesFootprint;
+            
+            document.getElementById('result').innerHTML = `<h3>Your estimated monthly carbon footprint is ${totalFootprint.toFixed(2)} kg CO2e</h3>`;
+        });
+    </script>
+</body>
+</html>
