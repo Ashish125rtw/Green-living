@@ -6,10 +6,42 @@
     <title>Green Living Tips</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e8f5e9;
+        }
+        .navbar, footer {
+            background-color: #4caf50;
+        }
+        .navbar a, footer a {
+            color: #fff; 
+        }
+        .navbar a:hover, footer a:hover {
+            color: #c8e6c9; 
+        }
+        .jumbotron {
+            background-color: #81c784; 
+            color: white;
+        }
+        .card {
+            background-color: #ffffff; 
+            border: 1px solid #c8e6c9; 
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #c8e6c9;
+        }
+        .social-icons img {
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Green Living</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +58,6 @@
         </div>
     </nav>
 
-    <!-- Tips Section -->
     <div class="container mt-4">
         <h2>Green Living Tips</h2>
         <div class="accordion" id="tipsAccordion">
@@ -129,40 +160,37 @@
     </div>
 
     <!-- Footer -->
-   <!-- Footer -->
- <br>
- <footer class="bg-light text-center text-lg-start mt-4">
-     <div class="container p-4 pb-0">
-         <div class="row">
-             <div class="col-md-12 mb-4 mb-md-0 text-center">
-                 <p>India </p>
-                 <br>
-                 <a href="https://www.linkedin.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
-                 </a>
-                 <a href="https://www.instagram.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram">
-                 </a>
-                 <a href="https://www.twitter.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter">
-                 </a>
-                 <a href="https://www.facebook.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook">
-                 </a>
-             </div>
-         </div>
-         <hr class="my-4">
-         <div class="row">
-             <div class="col-md-12 text-center">
-                 <p>&copy; 2024 Greenly, all rights reserved.</p>
-                 
-                 <a href="#" class="mx-2">Language & region: English , Globally</a>
-                 <p>Site built with teamwork by :🤝 <strong> LDCE Ninjas</strong>.</p>
-             </div>
-         </div>
-     </div>
- </footer>
- 
+    <footer class="text-center text-lg-start">
+        <div class="container p-4 pb-0">
+            <div class="row">
+                <div class="col-md-12 mb-4 mb-md-0">
+                    <p>India</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com" target="_blank" class="mx-2">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="mx-2">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="mx-2">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="mx-2">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2024 Green Living Tips. All rights reserved.</p>
+                    <a href="#" class="mx-2">Language & region: English, Globally</a>
+                    <p>Site built with teamwork by: 🤝 <strong>LDCE Ninjas</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
