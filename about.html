@@ -6,11 +6,57 @@
     <title>About Green Living</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(166, 232, 166);
+            background-size: cover;
+            background-color: #e8f5e9; 
+        }
+        
+        .navbar, footer {
+            background-color: #4caf50;
+        }
+        .navbar a, footer a {
+            color: #4cde41; 
+        }
+        .navbar a:hover, footer a:hover {
+            background-color: #5fd065;
+        }
+        
+        .content-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h2, .content-section h4 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .content-section p {
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .footer-icons img {
+            width: 24px;
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: rgb(21, 174, 21);
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.HTML">Green Living</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Green Living</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,70 +72,70 @@
         </div>
     </nav>
 
-    <!-- About Section -->
+   
     <div class="container mt-4">
-        <h2>About Us</h2>
-        <p>Welcome to Green Living Tips, your ultimate guide to living a sustainable and eco-friendly life. Our mission is to provide you with the latest tips, resources, and information to help you reduce your carbon footprint and make more environmentally conscious choices.</p>
-        <p>We believe that everyone can make a difference, no matter how small, and our goal is to inspire and empower you to take action in your daily life. From reducing waste and conserving water to choosing sustainable transportation and supporting renewable energy, we cover a wide range of topics to help you live a greener life.</p>
-        <p>If you have any questions, suggestions, or just want to connect, feel free to reach out to us through our contact page or follow us on social media. Together, we can make a positive impact on our planet.</p>
-        <h4>Contact Us</h4>
-        <p>Email: <a href="mailto:info@greenlivingtips.com">info@greenlivingtips.com</a></p>
+        <div class="content-section">
+            <h2>About Us</h2>
+            <p>Welcome to Green Living, your ultimate guide to living a sustainable and eco-friendly life. Our mission is to provide you with the latest tips, resources, and information to help you reduce your carbon footprint and make more environmentally conscious choices.</p>
+            <p>We believe that everyone can make a difference, no matter how small, and our goal is to inspire and empower you to take action in your daily life. From reducing waste and conserving water to choosing sustainable transportation and supporting renewable energy, we cover a wide range of topics to help you live a greener life.</p>
+            <p>If you have any questions, suggestions, or just want to connect, feel free to reach out to us through our contact page or follow us on social media. Together, we can make a positive impact on our planet.</p>
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:info@greenlivingtips.com">info@greenlivingtips.com</a></p>
 
-        <!-- Contact Form -->
-        <h4>Contact Form</h4>
-        <form action="WE-HAVE-T0-IMPLEMENT-BACKEND-JS-SCRIPT" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h4>Contact Form</h4>
+                <form action="backend_script_placeholder" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-
-        
+        </div>
     </div>
 
-  <!-- Footer -->
- <br>
- <footer class="bg-light text-center text-lg-start mt-4">
-     <div class="container p-4 pb-0">
-         <div class="row">
-             <div class="col-md-12 mb-4 mb-md-0 text-center">
-                 <p>India </p>
-                 <br>
-                 <a href="https://www.linkedin.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
-                 </a>
-                 <a href="https://www.instagram.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram">
-                 </a>
-                 <a href="https://www.twitter.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter">
-                 </a>
-                 <a href="https://www.facebook.com" target="_blank" class="mx-2">
-                     <img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook">
-                 </a>
-             </div>
-         </div>
-         <hr class="my-4">
-         <div class="row">
-             <div class="col-md-12 text-center">
-                 <p>&copy; 2024 Greenly, all rights reserved.</p>
-                 
-                 <a href="#" class="mx-2">Language & region: English , Globally</a>
-                 <p>Site built with teamwork by :🤝 <strong> LDCE Ninjas</strong>.</p>
-             </div>
-         </div>
-     </div>
- </footer>
- 
+    <footer class="footer text-center text-lg-start mt-4">
+        <div class="container p-4 pb-0">
+            <div class="row">
+                <div class="col-md-12 mb-4 mb-md-0 text-center">
+                    <p>India</p>
+                    <br>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Green Living, all rights reserved.</p>
+                    <a href="#" class="mx-2">Language & region: English , Globally</a>
+                    <p>Site built with teamwork by: 🤝 <strong>LDCE Ninjas</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
